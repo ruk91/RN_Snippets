@@ -7,6 +7,7 @@ import ToDoList from './app/views/ToDoList';
 import ModalDetail from './app/views/ModalDetail';
 import WhatsappCall from './app/views/WhatsappCall';
 import WhatsappCallList from './app/views/WhatsappCallList';
+import ProductView from './app/views/ProductView';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
@@ -16,7 +17,8 @@ const MainNavigator = createStackNavigator({
   ToDoList: {screen: ToDoList},
   ModalDetail: {screen: ModalDetail},
   WhatsappCall: {screen: WhatsappCall},
-  WhatsappCallList: {screen: WhatsappCallList}
+  WhatsappCallList: {screen: WhatsappCallList},
+  ProductView: {screen: ProductView}
 });
 
 const App = createAppContainer(MainNavigator);
