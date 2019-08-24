@@ -4,13 +4,15 @@ import Notifications from './app/views/NotificationScreen';
 import ImageGrid from './app/views/ImageGrid';
 import ImageGrid2 from './app/views/ImageGrid2';
 import ToDoList from './app/views/ToDoList';
+import ModalDetail from './app/views/ModalDetail';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
   Notifications: {screen: Notifications},
   ImageGrid: {screen: ImageGrid},
   ImageGrid2: {screen: ImageGrid2},
-  ToDoList:{screen: ToDoList}
+  ToDoList: {screen: ToDoList},
+  ModalDetail: {screen: ModalDetail}
 });
 
 const App = createAppContainer(MainNavigator);
