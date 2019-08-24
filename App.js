@@ -5,6 +5,7 @@ import ImageGrid from './app/views/ImageGrid';
 import ImageGrid2 from './app/views/ImageGrid2';
 import ToDoList from './app/views/ToDoList';
 import ModalDetail from './app/views/ModalDetail';
+import WhatsappCall from './app/views/WhatsappCall';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
@@ -12,7 +13,8 @@ const MainNavigator = createStackNavigator({
   ImageGrid: {screen: ImageGrid},
   ImageGrid2: {screen: ImageGrid2},
   ToDoList: {screen: ToDoList},
-  ModalDetail: {screen: ModalDetail}
+  ModalDetail: {screen: ModalDetail},
+  WhatsappCall: {screen: WhatsappCall}
 });
 
 const App = createAppContainer(MainNavigator);
