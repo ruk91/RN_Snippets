@@ -8,6 +8,8 @@ import ModalDetail from './app/views/ModalDetail';
 import WhatsappCall from './app/views/WhatsappCall';
 import WhatsappCallList from './app/views/WhatsappCallList';
 import ProductView from './app/views/ProductView';
+import ChatView from './app/views/ChatView';
+import FlatListGrid from './app/views/FlatListGrid';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
@@ -18,7 +20,9 @@ const MainNavigator = createStackNavigator({
   ModalDetail: {screen: ModalDetail},
   WhatsappCall: {screen: WhatsappCall},
   WhatsappCallList: {screen: WhatsappCallList},
-  ProductView: {screen: ProductView}
+  ProductView: {screen: ProductView},
+  ChatView: {screen: ChatView},
+  FlatListGrid: {screen: FlatListGrid}
 });
 
 const App = createAppContainer(MainNavigator);
