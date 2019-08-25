@@ -20,6 +20,8 @@ import Album from './app/views/Album';
 import Gallery from './app/views/Gallery';
 import BlogPosts from './app/views/BlogPosts';
 import ProductStore from './app/views/ProductStore';
+import GroupList from './app/views/GroupList';
+import ContactList from './app/views/ContactList';
 
 const MainNavigator = createStackNavigator({
   SignUp: {screen: SignUp},
@@ -42,7 +44,9 @@ const MainNavigator = createStackNavigator({
   Album: {screen: Album},
   Gallery: {screen: Gallery},
   BlogPosts: {screen: BlogPosts},
-  ProductStore: {screen: ProductStore}
+  ProductStore: {screen: ProductStore},
+  GroupList: {screen: GroupList},
+  ContactList: {screen: ContactList}
 });
 
 const App = createAppContainer(MainNavigator);
