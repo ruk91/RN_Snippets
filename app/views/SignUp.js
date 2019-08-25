@@ -63,7 +63,7 @@ export default class SignUp extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity style={[styles.buttonContainer, styles.loginButton]} onPress={() => this.onClickListener('login')}>
-          <Text style={styles.loginText}>Login</Text>
+          <Text style={styles.loginText}>SignUp</Text>
         </TouchableOpacity>
 
 

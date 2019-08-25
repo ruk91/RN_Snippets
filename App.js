@@ -18,6 +18,7 @@ import Login from './app/views/Login';
 import SignUp from './app/views/SignUp';
 import Album from './app/views/Album';
 import Gallery from './app/views/Gallery';
+import BlogPosts from './app/views/BlogPosts';
 
 const MainNavigator = createStackNavigator({
   SignUp: {screen: SignUp},
@@ -38,7 +39,8 @@ const MainNavigator = createStackNavigator({
   MenuList: {screen: MenuList},
   MenuList2: { screen: MenuList2},
   Album: {screen: Album},
-  Gallery: {screen: Gallery}
+  Gallery: {screen: Gallery},
+  BlogPosts: {screen: BlogPosts}
 });
 
 const App = createAppContainer(MainNavigator);
