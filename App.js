@@ -13,6 +13,8 @@ import FlatListGrid from './app/views/FlatListGrid';
 import UserList from './app/views/UserList';
 import EcommerceProduct from './app/views/EcommerceProduct';
 import MenuList from './app/views/MenuList';
+import MenuList2 from './app/views/MenuList2';
+import SignUp from './app/views/SignUp';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
@@ -28,7 +30,9 @@ const MainNavigator = createStackNavigator({
   FlatListGrid: {screen: FlatListGrid},
   UserList: {screen: UserList},
   EcommerceProduct: {screen: EcommerceProduct},
-  MenuList: {screen: MenuList}
+  MenuList: {screen: MenuList},
+  MenuList2: { screen: MenuList2},
+  SignUp: {screen: SignUp}
 });
 
 const App = createAppContainer(MainNavigator);
