@@ -12,6 +12,7 @@ import ChatView from './app/views/ChatView';
 import FlatListGrid from './app/views/FlatListGrid';
 import UserList from './app/views/UserList';
 import EcommerceProduct from './app/views/EcommerceProduct';
+import MenuList from './app/views/MenuList';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
@@ -26,7 +27,8 @@ const MainNavigator = createStackNavigator({
   ChatView: {screen: ChatView},
   FlatListGrid: {screen: FlatListGrid},
   UserList: {screen: UserList},
-  EcommerceProduct: {screen: EcommerceProduct}
+  EcommerceProduct: {screen: EcommerceProduct},
+  MenuList: {screen: MenuList}
 });
 
 const App = createAppContainer(MainNavigator);
