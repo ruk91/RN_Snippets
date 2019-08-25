@@ -10,6 +10,7 @@ import WhatsappCallList from './app/views/WhatsappCallList';
 import ProductView from './app/views/ProductView';
 import ChatView from './app/views/ChatView';
 import FlatListGrid from './app/views/FlatListGrid';
+import UserList from './app/views/UserList';
 
 const MainNavigator = createStackNavigator({
   Home: {screen: Home},
@@ -22,7 +23,8 @@ const MainNavigator = createStackNavigator({
   WhatsappCallList: {screen: WhatsappCallList},
   ProductView: {screen: ProductView},
   ChatView: {screen: ChatView},
-  FlatListGrid: {screen: FlatListGrid}
+  FlatListGrid: {screen: FlatListGrid},
+  UserList: {screen: UserList}
 });
 
 const App = createAppContainer(MainNavigator);
