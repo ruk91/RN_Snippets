@@ -7,13 +7,10 @@ import {
   Button,
   TouchableOpacity,
   Image,
-  Alert,
-  Dimensions
+  Alert
 } from 'react-native';
 
-const window = Dimensions.get('window');
-
-export default class SignUp extends Component {
+export default class Login extends Component {
 
   constructor(props) {
     super(props);
@@ -25,28 +22,20 @@ export default class SignUp extends Component {
 
   onClickListener = (viewId) => {
     // Alert.alert("Alert", "Button pressed "+viewId);
-    this.props.navigation.navigate('Login');
+    this.props.navigation.navigate('Home');
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Image style={styles.bgImage} source={{ uri: "https://lorempixel.com/900/1400/nightlife/8/" }}/>
-        <View style={styles.inputContainer}>
-          <TextInput style={styles.inputs}
-              placeholder="Full name"
-              underlineColorAndroid='transparent'
-              onChangeText={(email) => this.setState({email})}/>
-          <Image style={styles.inputIcon} source={{uri: 'https://img.icons8.com/color/40/000000/circled-user-male-skin-type-3.png'}}/>
-        </View>
-
+        <Image style={styles.bgImage} source={{ uri: "https://lorempixel.com/900/1400/nightlife/2/" }}/>
         <View style={styles.inputContainer}>
           <TextInput style={styles.inputs}
               placeholder="Email"
               keyboardType="email-address"
               underlineColorAndroid='transparent'
               onChangeText={(email) => this.setState({email})}/>
-          <Image style={styles.inputIcon} source={{uri: 'https://img.icons8.com/flat_round/40/000000/secured-letter.png'}}/>
+          <Image style={styles.inputIcon} source={{uri: 'https://img.icons8.com/nolan/40/000000/email.png'}}/>
         </View>
         
         <View style={styles.inputContainer}>
@@ -55,11 +44,11 @@ export default class SignUp extends Component {
               secureTextEntry={true}
               underlineColorAndroid='transparent'
               onChangeText={(password) => this.setState({password})}/>
-          <Image style={styles.inputIcon} source={{uri: 'https://img.icons8.com/color/40/000000/password.png'}}/>
+          <Image style={styles.inputIcon} source={{uri: 'https://img.icons8.com/nolan/40/000000/key.png'}}/>
         </View>
 
-        <TouchableOpacity style={styles.btnByRegister} onPress={() => this.onClickListener('restore_password')}>
-            <Text style={styles.textByRegister}>By registering on this App you confirm that you have read and accept our policy</Text>
+        <TouchableOpacity style={styles.btnForgotPassword} onPress={() => this.onClickListener('restore_password')}>
+            <Text style={styles.btnText}>Forgot your password?</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={[styles.buttonContainer, styles.loginButton]} onPress={() => this.onClickListener('login')}>
@@ -68,7 +57,7 @@ export default class SignUp extends Component {
 
 
         <TouchableOpacity style={styles.buttonContainer} onPress={() => this.onClickListener('register')}>
-            <Text style={styles.btnText}>Have an account?</Text>
+            <Text style={styles.btnText}>Register</Text>
         </TouchableOpacity>
       </View>
     );
@@ -127,12 +116,12 @@ const styles = StyleSheet.create({
     borderRadius:30,
     backgroundColor:'transparent'
   },
-  btnByRegister: {
+  btnForgotPassword: {
     height:15,
     flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginVertical:20,
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end',
+    marginBottom:10,
     width:300,
     backgroundColor:'transparent'
   },
@@ -156,24 +145,12 @@ const styles = StyleSheet.create({
     flex: 1,
     // resizeMode,
     position: 'absolute',
-    width: (window.width)*1,
-    height: (window.height)*1,
+    width: '100%',
+    height: '100%',
     justifyContent: 'center',
   },
   btnText:{
     color:"white",
-    fontWeight:'bold',
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 10
-  },
-  textByRegister:{
-    color:"white",
-    fontWeight:'bold',
-    textAlign:'center',
-
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 10
+    fontWeight:'bold'
   }
-});  
+}); 
