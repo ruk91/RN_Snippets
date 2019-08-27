@@ -26,6 +26,7 @@ import PostView from './app/views/PostView';
 import Profile from './app/views/Profile';
 import ProfileCardView from './app/views/ProfileCardView';
 import CompanyDescriptionView from './app/views/CompanyDescriptionView';
+import ContactView from './app/views/ContactView';
 
 const MainNavigator = createStackNavigator({
   SignUp: {screen: SignUp},
@@ -54,7 +55,8 @@ const MainNavigator = createStackNavigator({
   PostView: {screen: PostView},
   Profile: {screen: Profile},
   ProfileCardView: {screen: ProfileCardView},
-  CompanyDescriptionView: {screen: CompanyDescriptionView}
+  CompanyDescriptionView: {screen: CompanyDescriptionView},
+  ContactView: {screen: ContactView}
 });
 
 const App = createAppContainer(MainNavigator);
