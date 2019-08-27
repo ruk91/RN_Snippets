@@ -23,7 +23,8 @@ import ProductStore from './app/views/ProductStore';
 import GroupList from './app/views/GroupList';
 import ContactList from './app/views/ContactList';
 import PostView from './app/views/PostView';
-import Profile from './app/views/Profile'
+import Profile from './app/views/Profile';
+import ListWithSearchView from './app/views/ListWithSearchView';
 
 const MainNavigator = createStackNavigator({
   SignUp: {screen: SignUp},
@@ -50,7 +51,8 @@ const MainNavigator = createStackNavigator({
   GroupList: {screen: GroupList},
   ContactList: {screen: ContactList},
   PostView: {screen: PostView},
-  Profile: {screen: Profile}
+  Profile: {screen: Profile},
+  ListWithSearchView: {screen: ListWithSearchView}
 });
 
 const App = createAppContainer(MainNavigator);
